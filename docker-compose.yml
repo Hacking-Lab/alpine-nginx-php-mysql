@@ -1,0 +1,19 @@
+version: '3.6'
+
+services:
+  alpine-nginx-php.mariadb:
+    build: .
+    image: hackinglab/alpine-nginx-php-mariadb:3.2
+    environment:
+    - AUTHOR=e1
+    - HL_USER_USERNAME=hacker
+    - MYSQL_ROOT_PASSWORD=abcdefghijk
+    - MYSQL_DATABASE=glocken
+    - MYSQL_USER=glocken-user
+    - MYSQL_PASSWORD=gugus.gugus
+    - LISTEN=0.0.0.0
+    ports:
+      - 80:80
+      - 3306:3306
+
+
