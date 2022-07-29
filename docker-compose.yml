@@ -1,9 +1,9 @@
 version: '3.6'
 
 services:
-  alpine-nginx-php.mariadb:
+  alpine-nginx-php-8-mariadb:
     build: .
-    image: hackinglab/alpine-nginx-php-mariadb:3.2
+    image: hackinglab/alpine-nginx-php-8-mariadb:3.2
     environment:
     - AUTHOR=e1
     - HL_USER_USERNAME=hacker

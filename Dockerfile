@@ -1,4 +1,4 @@
-FROM hackinglab/alpine-nginx-php:3.2
+FROM hackinglab/alpine-nginx-php-8:3.2
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
 # Add the files
